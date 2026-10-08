@@ -1,6 +1,6 @@
 <div align="center">
 
-# ☀️ Suryamitra: Physics-Informed Solar Flare Prediction Engine
+#  Suryamitra: Physics-Informed Solar Flare Prediction Engine
 ### Operational Forecasting of $\ge$ M-Class Solar Flares using Multivariate Photospheric Magnetic Field Sequences (SDO/HMI & SWAN-SF)
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
@@ -11,7 +11,7 @@
 [![Space Weather Benchmark](https://img.shields.io/badge/Benchmark-SWAN--SF%20(SDO%2FHMI)-9cf.svg)](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/EBCFKM)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-*An end-to-end space weather machine learning pipeline designed for 24-hour advance forecasting of major solar flares ($\ge$ M-class), integrating solar magnetohydrodynamic (MHD) physics, temporal sequence modeling, and extreme class-imbalance optimization for space missions like ISRO's Aditya-L1 and NASA's SDO.*
+*An end-to-end space weather machine learning pipeline designed for 24-hour advance forecasting of major solar flares (>/M-class), integrating solar magnetohydrodynamic (MHD) physics, temporal sequence modeling, and extreme class-imbalance optimization for space missions like ISRO's Aditya-L1 and NASA's SDO.*
 
 [Overview](#-executive-summary) • [System Architecture](#-system-architecture) • [Physics Grounding](#-physics-driven-feature-engineering) • [Domain Metrics](#-domain-specific-metrics--evaluation) • [Project Structure](#-project-structure) • [Quickstart](#-quickstart--reproducibility) • [Roadmap](#-implementation-roadmap)
 
@@ -19,7 +19,7 @@
 
 </div>
 
-## 📌 Executive Summary
+## Executive Summary
 
 Major solar flares ($\ge$ M-class and X-class) are violent releases of magnetic energy in solar active regions (ARs). These cataclysmic space weather events trigger severe geomagnetic storms, disrupt satellite navigation (GPS/GNSS), degrade high-frequency (HF) communications, and endanger astronauts and space infrastructure.
 
@@ -36,7 +36,7 @@ Major solar flares ($\ge$ M-class and X-class) are violent releases of magnetic 
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```mermaid
 flowchart TD
@@ -71,7 +71,7 @@ flowchart TD
 
 ---
 
-## 🧲 Physics-Driven Feature Engineering
+## Physics-Driven Feature Engineering
 
 Unlike black-box models, Suryamitra grounds its feature representation in solar magnetohydrodynamics (MHD) and flare trigger mechanisms:
 
@@ -89,7 +89,7 @@ Unlike black-box models, Suryamitra grounds its feature representation in solar 
 
 ---
 
-## 📐 Domain-Specific Metrics & Evaluation
+## Domain-Specific Metrics & Evaluation
 
 Standard accuracy (e.g., $98.5\%$) is misleading in space weather forecasting because predicting "no flare" all the time achieves $>98\%$ accuracy while failing completely on operational utility.
 
@@ -114,7 +114,7 @@ $$\tau^* = \arg\max_{\tau \in [0.1, 0.9]} \text{TSS}_{\text{val}}(\tau)$$
 
 ---
 
-## 📊 Benchmark & Preliminary Results
+## Benchmark & Preliminary Results
 
 *Evaluated on SWAN-SF multi-partition benchmark protocol: Training on Partitions 1–3, Validation on Partition 4, Testing on Partition 5 (unseen future active regions).*
 
@@ -129,7 +129,7 @@ $$\tau^* = \arg\max_{\tau \in [0.1, 0.9]} \text{TSS}_{\text{val}}(\tau)$$
 
 ---
 
-## 🔍 Model Interpretability & Physics Validation (SHAP)
+## Model Interpretability & Physics Validation (SHAP)
 
 To verify that the model does not exploit spurious statistical artifacts, **TreeSHAP** is applied to compute exact Shapley feature attributions:
 
@@ -146,7 +146,7 @@ SAVNCPP_mean    ━━━━━━━━━━━━ (High net non-neutralized c
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 solar-flare-ml/
@@ -172,7 +172,7 @@ solar-flare-ml/
 
 ---
 
-## 🚀 Quickstart & Reproducibility
+## Quickstart & Reproducibility
 
 ### 1. Clone the Repository & Setup Environment
 ```bash
@@ -215,7 +215,7 @@ streamlit run app.py
 
 ---
 
-## 🧭 Implementation Roadmap
+## Implementation Roadmap
 
 - [x] **Phase 1: SWAN-SF Pipeline & Baseline (Weeks 1–2)**
   - [x] Extract and process Partition 1 feature table
@@ -236,7 +236,7 @@ streamlit run app.py
 
 ---
 
-## 🛰️ Space Weather & Mission Context
+## Space Weather & Mission Context
 
 This project is architected with operational relevance to leading space weather monitoring initiatives:
 - **ISRO Aditya-L1 Mission**: India's flagship solar observatory positioned at Lagrange Point L1, hosting payloads including SUIT (Solar Ultraviolet Imaging Telescope) and VELC (Visible Emission Line Coronagraph).
@@ -245,7 +245,7 @@ This project is architected with operational relevance to leading space weather 
 
 ---
 
-## 📚 References & Acknowledgements
+## References & Acknowledgements
 
 1. **SWAN-SF Benchmark**: Angryk, R. A., et al. (2020). *A Multivariate Time Series Dataset for Space Weather Data Analytics*. Nature Scientific Data. [DOI: 10.1038/s41597-020-0548-x](https://doi.org/10.1038/s41597-020-0548-x).
 2. **SDO/HMI Instrument**: Scherrer, P. H., et al. (2012). *The Helioseismic and Magnetic Imager (HMI) Investigation on the Solar Dynamics Observatory (SDO)*. Solar Physics.
