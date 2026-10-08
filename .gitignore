@@ -1,0 +1,50 @@
+# Python virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Data files (large datasets from SWAN-SF)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+*.tar.gz
+*.tar
+*.csv
+*.fits
+*.h5
+*.parquet
+
+# Model artifacts & checkpoints
+models/*
+!models/.gitkeep
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.onnx
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Logs & temporary files
+*.log
+logs/
+scratch/
+.system_generated/
+
+# Environment & local settings
+.env
+.env.local
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
