@@ -255,5 +255,5 @@ This project is architected with operational relevance to leading space weather 
 ---
 
 <div align="center">
-  <b>Authored by Kiran</b> • Connect on <a href="https://linkedin.com">LinkedIn</a> • Space Weather & Physics-Informed ML
+  <b>Authored by Sohi Kulkarni</b> • Connect on <a href="www.linkedin.com/in/sohi-kulkarni">LinkedIn</a> • Space Weather & Physics-Informed ML
 </div>
