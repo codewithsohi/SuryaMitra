@@ -11,7 +11,7 @@
 [![Space Weather Benchmark](https://img.shields.io/badge/Benchmark-SWAN--SF%20(SDO%2FHMI)-9cf.svg)](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/EBCFKM)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-*An end-to-end space weather machine learning pipeline designed for 24-hour advance forecasting of major solar flares (>/M-class), integrating solar magnetohydrodynamic (MHD) physics, temporal sequence modeling, and extreme class-imbalance optimization for space missions like ISRO's Aditya-L1 and NASA's SDO.*
+
 
 [Overview](#-executive-summary) • [System Architecture](#-system-architecture) • [Physics Grounding](#-physics-driven-feature-engineering) • [Domain Metrics](#-domain-specific-metrics--evaluation) • [Project Structure](#-project-structure) • [Quickstart](#-quickstart--reproducibility) • [Roadmap](#-implementation-roadmap)
 
