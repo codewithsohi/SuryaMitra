@@ -254,6 +254,10 @@ This project is architected with operational relevance to leading space weather 
 
 ---
 
-<div align="center">
-  <b>Authored by Sohi Kulkarni</b> • Connect on <a href="www.linkedin.com/in/sohi-kulkarni">LinkedIn</a> • Space Weather & Physics-Informed ML
-</div>
+## Author & Contact
+
+Developed by **Sohi Kulkarni**
+
+[![GitHub](https://img.shields.io/badge/GitHub-@codewithsohi-181717?style=flat-square&logo=github)](https://github.com/codewithsohi)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/sohi-kulkarni)
+
