@@ -25,6 +25,8 @@ Major solar flares ($\ge$ M-class and X-class) are violent releases of magnetic 
 
 **Suryamitra** is a physics-informed operational machine learning pipeline built on the benchmark **SWAN-SF** (Space Weather Analytics for Solar Flares) dataset derived from NASA's **SDO/HMI** (Solar Dynamics Observatory / Helioseismic and Magnetic Imager) vector magnetograms. 
 
+⚠️ **Project Status: Active Development** 
+
 ### Key Engineering & Scientific Highlights:
 - **Zero Temporal Data Leakage**: Evaluated across 5 chronological partitions following standard space weather protocols (Train: Partitions 1–3, Validate: Partition 4, Unseen Future Test: Partition 5).
 - **Extreme Class Imbalance Handling**: Addresses severe real-world flare rarity (~1.5% positive flare rate) via dynamic positive sample re-weighting (`scale_pos_weight`), focal loss formulations, and probability calibration.
